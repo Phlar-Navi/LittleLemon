@@ -10,7 +10,6 @@ router.register(r'users', views.UserViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('', views.index, name='index'),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('menu-items/', views.MenuItemViewSet.as_view()),
     path('menu-items/<int:pk>', views.SingleMenuItemViewSet.as_view()),
     path('message/', views.msg),

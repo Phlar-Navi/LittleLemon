@@ -11,7 +11,6 @@ class Booking(models.Model):
         return self.first_name
 
 
-# Add code to create Menu model
 class Menu(models.Model):
    title = models.CharField(max_length=255) 
    price = models.DecimalField(max_digits=10, decimal_places=2, null=False) 
